@@ -1,0 +1,19 @@
+--
+-- Database: `dbtest`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `name` varchar(60) NOT NULL AUTO_INCREMENT,
+  `email` varchar(60) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `college` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`name`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
